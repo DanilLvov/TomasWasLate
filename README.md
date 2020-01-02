@@ -1,4 +1,6 @@
-Tomas Was Late is a video game based on a Tomas was alone game.
+## My first Git project
+
+An Example game 
 
 That is my first project on GitHub. Advancing in OOP.
 
