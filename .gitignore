@@ -2,3 +2,4 @@
 *.filters
 *targetver.h
 *stdafx.cpp
+*.vcxproj
