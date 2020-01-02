@@ -1,12 +1,14 @@
 // Include important C++ libraries here
 #include "stdafx.h"
-#include<SFML/Graphics.hpp>
 
-using namespace sf;
 int main()
 {
-	VideoMode vm(1366, 720);
-	RenderWindow window(vm, "Timber!!!", Style::Fullscreen);
+	sf::Vector2f resolution;
+	resolution.x = sf::VideoMode::getDesktopMode().width;
+	resolution.y = sf::VideoMode::getDesktopMode().height;
+
+	sf::VideoMode vm(resolution.x, resolution.y);
+	sf::RenderWindow window(vm, "TWL", sf::Style::Fullscreen);
 	return 0;
 }
 

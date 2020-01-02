@@ -1,0 +1,4 @@
+*.dll
+*.filters
+*targetver.h
+*stdafx.cpp
