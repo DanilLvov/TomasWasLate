@@ -3,3 +3,4 @@
 *targetver.h
 *stdafx.cpp
 *.vcxproj
+*Debug/
