@@ -41,5 +41,6 @@ sf::Texture & TextureHolder::GetTexture(std::string const & filename)
 		texture.loadFromFile(filename);
 		return texture;
 	}
+	// TODO: insert return statement here
 
 }

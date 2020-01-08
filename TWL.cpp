@@ -1,14 +1,14 @@
-// Include important C++ libraries here
 #include "stdafx.h"
+#include "Engine.h"
 
 int main()
 {
-	sf::Vector2f resolution;
-	resolution.x = sf::VideoMode::getDesktopMode().width;
-	resolution.y = sf::VideoMode::getDesktopMode().height;
+	// creating our engine
+	Engine engine;
 
-	sf::VideoMode vm(resolution.x, resolution.y);
-	sf::RenderWindow window(vm, "TWL", sf::Style::Fullscreen);
+	// launching our engine
+	engine.run();
+
 	return 0;
 }
 
