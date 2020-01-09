@@ -34,7 +34,7 @@ bool Thomas::handleInput()
 	{
 		m_LeftPressed = true;
 	}
-	else
+	else 
 	{
 		m_LeftPressed = false;
 	}

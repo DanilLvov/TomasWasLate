@@ -29,6 +29,16 @@ void Engine::m_input()
 			{
 				m_SplitScreen = !m_SplitScreen;
 			}
+			// Handle input specific to Thomas
+			if (m_Thomas.handleInput())
+			{
+				// Play a jump sound
+			}
+			// Handle input specific to Bob
+			if (m_Bob.handleInput())
+			{
+				// Play a jump sound
+			}
 		}
 	}
 }

@@ -1,5 +1,8 @@
 #pragma once
 #include "TextureHolder.h"
+#include "Thomas.h"
+#include "Bob.h"
+
 #include <SFML/Graphics.hpp>
 
 using namespace sf;
@@ -10,6 +13,10 @@ class Engine
 private:
 	TextureHolder holder;
 	RenderWindow m_Window;
+
+	// Thomas and his friend, Bob
+	Thomas m_Thomas;
+	Bob m_Bob;
 
 	// Main views
 	View m_MainView;
@@ -48,7 +55,7 @@ private:
 	bool m_SplitScreen = false;
 
 	// is it time to launch a new level
-	bool m_NewLvl = false;
+	bool m_NewLvl = true;
 
 	// Time left in the current level (seconds)
 	float m_TimeRemaining = 10;

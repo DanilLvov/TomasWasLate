@@ -47,15 +47,17 @@ public:
 	// virtual input function
 	bool virtual handleInput() = 0;
 
-	FloatRect getHead();
-	FloatRect getFeet();
-	FloatRect getLeft();
-	FloatRect getRight();
+	
 
 	// getters
 	Sprite getSprite();
 
 	FloatRect getPosition();
+
+	FloatRect getHead();
+	FloatRect getFeet();
+	FloatRect getLeft();
+	FloatRect getRight();
 
 	Vector2f getCenter();
 

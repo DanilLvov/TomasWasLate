@@ -9,7 +9,7 @@ Engine::Engine()
 	resolution.y = VideoMode::getDesktopMode().height;
 
 	VideoMode vm(resolution.x, resolution.y);
-	m_Window.create(vm, "TWL", Style::Fullscreen);
+	m_Window.create(vm, "TWL", Style::Default);
 
 	// Initialize the main view
 	m_MainView.setSize(resolution);
