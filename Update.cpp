@@ -9,14 +9,7 @@ void Engine::m_update(float dtAsSeconds)
 {
 	if (m_NewLvl)
 	{
-		// These calls to spawn will be moved to a new
-		// loadLevel() function soon
-		// Spawn Thomas and Bob
-		m_Thomas.spawn(Vector2f(0, 0), GRAVITY);
-		m_Bob.spawn(Vector2f(100, 0), GRAVITY);
-		// Make sure spawn is called only once
-		m_TimeRemaining = 10;
-		m_NewLvl = false;
+		m_loadLevel();
 	}
 
 	if (m_Playing)

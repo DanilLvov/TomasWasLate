@@ -2,6 +2,7 @@
 #include "TextureHolder.h"
 #include "Thomas.h"
 #include "Bob.h"
+#include "LevelManager.h"
 
 #include <SFML/Graphics.hpp>
 
@@ -34,8 +35,19 @@ private:
 	Sprite m_BGSprite;
 	Texture m_BGTexture;
 
+	// level manager
+	LevelManager m_LvlM;
+
+	// private vertex array
+	VertexArray m_VALevel;
+
+	// Texture for our level
+	Texture m_TextureTiles;
+
 // private variables
 private:
+	// a double pointer for double array
+	int** m_ArrayLevel = NULL;
 
 	// vars for vertexes
 	const int TILE_SIZE = 50;
@@ -66,6 +78,9 @@ private:
 	void m_input();
 	void m_update(float dtAsSeconds);
 	void m_draw();
+
+	// level loading func
+	void m_loadLevel();
 
 // public functions
 public:
